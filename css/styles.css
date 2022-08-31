@@ -1,0 +1,275 @@
+:root {
+  /* Fonts */
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+
+  /* Text colors */
+  --main-txt-cl: #212121;
+  --secondary-txt-cl: #d9d9d9;
+  --blue-txt-cl: #2196f3;
+  --grey-txt-cl: #757575;
+  --light-txt-cl: #ffffff;
+
+  /* Background colors */
+  --main-bg-cl: #2f303a;
+  --blue-cl: #2196f3;
+}
+
+/* Reset */
+
+.link-header,
+.contact,
+.logo {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.link-footer,
+.link-detail {
+  text-decoration: none;
+}
+
+.list,
+.list-items,
+.contacts,
+.projects-list,
+.list-footer {
+  list-style: none;
+}
+
+/* Body-Студія */
+
+.page {
+  color: var(--main-txt-cl);
+  font-family: var(--main-font);
+}
+
+/* Header */
+
+.logo {
+  font-family: var(--secondary-font);
+  font-size: 26px;
+  line-height: 1.19;
+  /* identical to box height */
+  letter-spacing: 0.03em;
+  color: var(--blue-txt-cl);
+}
+
+.logo-blk {
+  color: #000000;
+}
+
+.link-header:hover,
+.link-header:focus {
+  color: var(--blue-cl);
+}
+
+.contact:hover,
+.contact:focus {
+  color: var(--blue-cl);
+}
+
+.link-header {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-txt-cl);
+}
+
+.contact {
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--grey-txt-cl);
+}
+
+.active {
+  color: var(--blue-cl);
+}
+
+/* Шапка */
+
+.main-title {
+  background-color: var(--main-bg-cl);
+}
+
+.title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  /* or 136% */
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--light-txt-cl);
+}
+
+.button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.85;
+  /* identical to box height, or 188% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--light-txt-cl);
+  background-color: var(--blue-cl);
+}
+
+/* Наші переваги */
+
+.hidden-title,
+.project-title {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.list-features {
+  font-family: var(--main-font);
+}
+
+.feature {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.desc {
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: var(--grey-txt-cl);
+}
+
+/* Чим ми займаємося */
+
+.secondary-title {
+  font-family: var(--main-font);
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Наша команда */
+
+.team {
+  font-family: var(--main-font);
+  background-color: #f5f4fa;
+}
+
+.title-3 {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-position {
+  font-size: 16px;
+  line-height: 1.19;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--grey-txt-cl);
+}
+
+/* Підвал */
+
+.footer {
+  background-color: var(--main-bg-cl);
+}
+
+.logo-clr {
+  color: var(--light-txt-cl);
+}
+
+.contacts-address {
+  font-style: normal;
+}
+
+.link-footer {
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: var(--light-txt-cl);
+}
+
+.link-detail {
+  color: #ffffff99;
+}
+
+/* Body-Portfolio */
+
+/* Фільтри */
+
+.btn {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  /* identical to box height, or 162% */
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: #F5F4FA;
+}
+
+.filters .btn:hover,
+.filters .btn:focus {
+  background: var(--blue-cl);
+  color: var(--light-txt-cl);
+  cursor: pointer;
+}
+
+.btn.active {
+  background: var(--blue-cl);
+  color: var(--light-txt-cl);
+}
+
+/* Портфоліо */
+
+.projects {
+  font-family: var(--main-font);
+}
+
+
+.project-name {
+  font-size: 18px;
+  line-height: 2;
+  /* identical to box height, or 200% */
+  letter-spacing: 0.06em;
+}
+
+.project-detail {
+  font-size: 16px;
+  line-height: 1.87;
+  /* identical to box height, or 188% */
+  letter-spacing: 0.03em;
+  color: var(--grey-txt-cl);
+}
