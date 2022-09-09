@@ -69,6 +69,7 @@ img {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0 auto;
   outline-offset: 2px solid red;
 }
 
@@ -101,20 +102,12 @@ img {
   color: #000000;
 }
 
-.nav-link {
-  margin-right: auto;
-}
-
 .nav-list {
   display: flex;
   gap: 50px;
   align-items: center;
-  margin-top: 32px;
-  margin-bottom: 32px;
-}
-
-.nav-list:not(:last-child) {
-  gap: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .logo {
@@ -126,10 +119,6 @@ img {
   gap: 50px;
   align-items: center;
   margin-left: auto;
-}
-
-.contacts-list: not(: last-child) {
-  gap: 50px;
 }
 
 .link-header,
@@ -170,9 +159,10 @@ img {
 
 /* Шапка */
 
-.main-title {
+.main {
   background-color: var(--main-bg-cl);
-  height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .title {
@@ -185,7 +175,6 @@ img {
   text-transform: uppercase;
   color: var(--light-txt-cl);
   width: 696px;
-  padding-top: 200px;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -197,7 +186,6 @@ img {
   font-size: 16px;
   line-height: 1.85;
   /* identical to box height, or 188% */
-  display: block;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -236,10 +224,6 @@ h3 {
   margin-bottom: 10px;
 }
 
-.list-features {
-  font-family: var(--main-font);
-}
-
 .feature {
   font-weight: 700;
   font-size: 14px;
@@ -250,10 +234,6 @@ h3 {
 
 .description {
   display: flex;
-  gap: 30px;
-}
-
-.description:not(:last-child) {
   gap: 30px;
 }
 
@@ -271,6 +251,10 @@ h3 {
 
 /* Чим ми займаємося */
 
+.list-main {
+  padding-top: 0;
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -283,31 +267,32 @@ h3 {
   letter-spacing: 0.03em;
 }
 
-.img-list:not(:last-child) {
+.img-list {
+  display: flex;
   gap: 30px;
 }
 
-.img-list {
-  display: flex;
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Наша команда */
 
-.team-list:not(:last-child) {
-  gap: 30px;
-}
-
 .team-list {
   display: flex;
-}
-
-.img {
-  padding-bottom: 30px;
+  gap: 30px;
 }
 
 .team {
   font-family: var(--main-font);
   background-color: #f5f4fa;
+}
+
+.team-info {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .title-3 {
@@ -339,16 +324,12 @@ h3 {
 
 .footer {
   background-color: var(--main-bg-cl);
-}
-
-.ftr-container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
 .footer-logo {
   display: block;
-  padding-top: ;
   margin-bottom: 20px;
   margin-right: auto;
 }
@@ -362,6 +343,7 @@ h3 {
 }
 
 .link-footer {
+  font-family: var(--main-font);
   font-size: 14px;
   line-height: 1.71;
   /* or 171% */
@@ -370,6 +352,11 @@ h3 {
 }
 
 .link-detail {
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+  letter-spacing: 0.03em;
   color: #ffffff99;
 }
 
@@ -381,30 +368,26 @@ h3 {
 .list-item-ft,
 .link-footer,
 .link-detail {
-  display: block;
   margin-bottom: 9px;
   padding-left: 0;
   margin-right: auto;
 }
+
+.list-item-ft:last-child {
+  margin-bottom: 0;
+}
+
+
 
 /* Body-Portfolio */
 
 /* Фільтри */
 
 .filter-list {
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  gap: 30px;
-}
-
-.filter-item {
-  display: inline-block;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 56px;
-  gap: 30px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
 .btn {
@@ -416,13 +399,6 @@ h3 {
   text-align: center;
   letter-spacing: 0.03em;
   background-color: #f5f4fa;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 56px;
-}
-
-.btn:not(:last-child) {
-  gap: 30px;
 }
 
 .btn:hover,
@@ -433,6 +409,10 @@ h3 {
 }
 
 .active {
+  color: var(--blue-cl);
+}
+
+.active-btn {
   background: var(--blue-cl);
   color: var(--light-txt-cl);
 }
@@ -452,11 +432,6 @@ h3 {
 
 .project {
   flex-basis: ((100% - var(--indent)) * (var(--items) - 1)) / var(--items);
-  border-bottom: 1px solid #eeeeee;
-}
-
-.img-pf {
-  margin-bottom: 20px;
 }
 
 .projects {
@@ -468,7 +443,6 @@ h3 {
   line-height: 2;
   /* identical to box height, or 200% */
   letter-spacing: 0.06em;
-  margin-left: 24px;
   margin-bottom: 4px;
 }
 
@@ -478,6 +452,10 @@ h3 {
   /* identical to box height, or 188% */
   letter-spacing: 0.03em;
   color: var(--grey-txt-cl);
-  margin-left: 24px;
-  margin-bottom: 20px;
+}
+
+.project-info {
+  padding: 20px 24px;
+  box-sizing: border-box;
+  border: 1px solid #eeeeee;
 }
