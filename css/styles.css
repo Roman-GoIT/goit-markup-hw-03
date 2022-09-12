@@ -63,6 +63,7 @@ img {
   display: block;
 }
 
+
 /* Container */
 
 .container {
@@ -82,10 +83,13 @@ img {
 
 /* Header */
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
 .header-container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 
 .logo {
@@ -251,14 +255,15 @@ h3 {
 
 /* Чим ми займаємося */
 
-.list-main {
-  padding-top: 0;
-}
-
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
+.list-main {
+  padding-top: 0;
+}
+
 .secondary-title {
   font-family: var(--main-font);
   font-size: 36px;
